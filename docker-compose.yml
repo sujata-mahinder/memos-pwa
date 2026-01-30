@@ -1,0 +1,9 @@
+services:
+  offline-memos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: offline-memos
+    ports:
+      - "5555:80"
+    restart: unless-stopped
